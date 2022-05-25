@@ -1,0 +1,122 @@
+body{
+
+    background-color: #383a4f !important;
+    
+}
+.contenedor-main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Se le da formato al formulario en general */
+form {
+    /* f5f4f2 */
+    background: #525575;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.form>h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+/* A los div(contendores) que tengan la clase gruo se les da un  margen y una posion relativa */
+form .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+/* Estilo para los inputs del formulario 
+    color de fuente
+    tamaño de la misma
+    Se les quita el borde
+    Pero solo se deja el borde de abajo para que se vea una linea tipo "libreta"
+    
+    'display: block'
+    El elemento es mostrado como un elemento block, o sea como los párrafos o encabezados siempre fueron mostrados.
+    Un elemento block siempre tiene algo de espacio por encima y debajo, que lo separa de los demás elementos, y no acepta ningún otro elemento a su lado 
+    - si no está indicado de otra manera (float).
+*/
+input {
+    background: none;
+    color: #22242c;
+    font-size: 20px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+/* Estilo para quitar el borde que se hace al darle click a los inputs
+y darle un color a la fuente dentro de estos  */
+input:focus {
+    outline: none;
+    color: #ffffff;
+}
+
+/* Para darle color al label del input */
+label {
+    color: #ffffff;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    /* Para que no tenga eventos del mouse el label */
+    pointer-events: none;
+}
+
+/* El sigo ~ se usa como selector hermano
+cuando se active el focus en el input del formulario
+este activa el estilo que se de para su hermano en este caso label 
+haciendo que se salga del input con un top negativo  
+
+El validade hace uso de la etiqueta require que se le coloco a los inputs dentro del formulario
+y este valida si es correcto dependiendo de su type. ejemplo type="email", type="text", etc.
+En caso de que ese no sea cumplido el label regresa a su posición original dentro del input
+*/
+input:focus~label,
+input:valid~label {
+    top: -14px;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Estilo para el contenedor(div) del boton 
+    Se le dieron propiedades para que este este al centro de su cotenedor
+    padre
+*/
+.contBoton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para darle color al fondo, a la fuente y al mismo tiempo darle un tamaño */
+.boton {
+    background: #32998b;
+    color: #000;
+    /* Este lo coloco para quitar el color del borde de boton */
+    border-color: transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 50%;
+}
+
+/*Estilo para que cuando el usuario pase el mouse por encima del boton
+este cambie de color*/
+.boton:hover {
+    background: #026efa;
+}
+
+/* Estilo para que cuando el usuario le de click en el boton el color del texto cambie */
+.boton:focus {
+    color: #fff;
+}
