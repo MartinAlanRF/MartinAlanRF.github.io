@@ -14,14 +14,16 @@
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            Bootstrap
-          </a>
-        </div>
-      </nav>
+      <div class="container-navBar">
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+              <strong>CRUD OF MANGAS</strong>
+            </a>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
         <div class="container contenedor-main">
@@ -81,7 +83,18 @@
     </main>
     <script type="text/javascript" src="./js/index.js"></script>
 </body>
-<footer>
+<footer class="bg-dark text-white" id="Footer">
+      <div class="col-md-12 d-flex justify-content-center align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="text-muted">© 2022 Proyecto CRUD localstorage javascript, Ucamp Desarrollo Full Stack </span>
+      </div>
   
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
 </footer>
 </html>

@@ -1,12 +1,40 @@
 body{
+        /* Se coloca la propiedad flex y colum como un minimo de altura para que la barra de footer se quede pegada
+    a la parte inferior de la pagina  */
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
     /* background-color: #383a4f !important; */
     background-image: url("../images/musee-manga-kyoto-6.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+
+}
+
+/*Este contendor contiene el estilo para dejar la navbar de boostrap en la parte superior 
+de la pagina aunque el usuario haga scroll*/
+.container-navBar{
+    /*Fixed
+    El elemento es removido del flujo normal del documento, sin crearse espacio alguno 
+    para el elemento en el esquema de la página. Es posicionado con relación al bloque contenedor 
+    inicial establecido por el viewport*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    /*La propiedad CSS z-index indica el orden de 
+    un elemento posicionado y sus descendientes. Cuando varios elementos se superponen, 
+    los elementos con mayor valor z-index cubren aquellos con menor valor. 
+    
+    Se coloca 1030 porque es el valor que ocupa por defecto boostrap al tomar la navbar fixed
+    de sus ejemplos
+    */
+    z-index: 1030;;
 }
 
 .contenedor-main {
-    margin-top: 20px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +148,7 @@ input:valid~label {
     border-color: transparent;
     border-radius: 10px;
     font-size: 20px;
-    width: 40%;
+    width: 43%;
 }
 
 /*Estilo para que cuando el usuario pase el mouse por encima del boton
@@ -157,25 +185,14 @@ este cambie de color*/
     color: #ffffff;
 }
 
-.tabla .edit .delete{
-    width: 100px;
+.botonActions{
+    width: 150px;
+    margin: 2px;
 }
 
-
-/*Medidas de pantalla acomodando el contenido respecto a estas*/
-@media only screen and (max-width: 1200px) and (min-width: 980px) {
-
-    /* Nota para el form apartirn de los 500px agrega que el margen del .grupo y de .form sea de 30 20 */
-
-    .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-
+#Footer {
+    margin-top: auto;
 }
-
 
 /* Para 960px */
 @media only screen and (max-width: 980px) and (min-width: 821px) {
@@ -187,6 +204,11 @@ este cambie de color*/
     form .grupo {
         position: relative;
         margin: 30px;
+    }
+
+    .botonActions{
+        width: 130px;
+        height: 50px;
     }
 
 }
@@ -202,6 +224,11 @@ este cambie de color*/
         position: relative;
         margin: 30px;
     }
+
+    .botonActions{
+        width: 120px;
+        height: 50px;
+    }
 }
 
 
@@ -213,6 +240,11 @@ este cambie de color*/
     form .grupo {
         position: relative;
         margin: 30px;
+    }
+
+    .botonActions{
+        width: 80px;
+        height: 50px;
     }
 
 }
@@ -228,6 +260,10 @@ este cambie de color*/
         position: relative;
         margin: 30px;
     }
+    .botonActions{
+        width: 70px;
+        height: 50px;
+    }
 }
 
 /* Para 320px */
@@ -239,6 +275,11 @@ este cambie de color*/
     form .grupo{
         position: relative;
         margin: 30px;
+    }
+
+    .botonActions{
+        width: 60px;
+        height: 40px;
     }
 
 }
