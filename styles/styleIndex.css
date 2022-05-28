@@ -1,13 +1,27 @@
 body{
-
-    background-color: #383a4f !important;
-    
+    /* background-color: #383a4f !important; */
+    background-image: url("../images/musee-manga-kyoto-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .contenedor-main {
-    margin-top: 100px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatarPicture {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
 }
 
 /* Se le da formato al formulario en general */
@@ -18,7 +32,7 @@ form {
     border-radius: 20px;
 }
 
-.form>h1 {
+.form h1 {
     text-align: center;
     padding-top: 20px;
     font-weight: bolder;
@@ -95,8 +109,7 @@ input:valid~label {
 */
 .contBoton {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
 /* Estilo para darle color al fondo, a la fuente y al mismo tiempo darle un tamaño */
@@ -107,7 +120,7 @@ input:valid~label {
     border-color: transparent;
     border-radius: 10px;
     font-size: 20px;
-    width: 50%;
+    width: 40%;
 }
 
 /*Estilo para que cuando el usuario pase el mouse por encima del boton
@@ -119,4 +132,142 @@ este cambie de color*/
 /* Estilo para que cuando el usuario le de click en el boton el color del texto cambie */
 .boton:focus {
     color: #fff;
+}
+
+.table{
+    width: 90%;
+    margin-top: 40px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: #525575;
+    border-radius: 10px;
+}
+
+.table>h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    color: #fff;
+    width: 100%;
+}
+
+.tabla{
+    color: #ffffff;
+}
+
+.tabla .edit .delete{
+    width: 100px;
+}
+
+
+/*Medidas de pantalla acomodando el contenido respecto a estas*/
+@media only screen and (max-width: 1200px) and (min-width: 980px) {
+
+    /* Nota para el form apartirn de los 500px agrega que el margen del .grupo y de .form sea de 30 20 */
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+}
+
+
+/* Para 960px */
+@media only screen and (max-width: 980px) and (min-width: 821px) {
+
+    form {
+        padding: 25px;
+    }
+
+    form .grupo {
+        position: relative;
+        margin: 30px;
+    }
+
+    /*  */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+}
+
+
+@media only screen and (max-width: 820px) and (min-width: 621px) {
+
+    form {
+        padding: 25px;
+    }
+
+    form .grupo {
+        position: relative;
+        margin: 30px;
+    }
+
+    /*  */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+@media only screen and (max-width: 620px) and (min-width: 501px) {
+    form {
+        padding: 25px;
+    }
+
+    form .grupo {
+        position: relative;
+        margin: 30px;
+    }
+
+    /*  */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+/* Para 480px */
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+    form {
+        padding: 25px;
+    }
+
+    form .grupo {
+        position: relative;
+        margin: 30px;
+    }
+}
+
+/* Para 320px */
+@media only screen and (max-width: 340px) and (min-width: 5px) {
+    form{
+        padding: 25px;
+    }
+
+    form .grupo{
+        position: relative;
+        margin: 30px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
 }

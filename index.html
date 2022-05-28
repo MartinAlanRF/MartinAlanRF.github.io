@@ -13,17 +13,29 @@
     <title>Lista Mangas Favoritos</title>
 </head>
 <body>
-    <header></header>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Bootstrap
+          </a>
+        </div>
+      </nav>
+    </header>
     <main>
         <div class="container contenedor-main">
           <div class="container">
-
+            <div class="avatar">
+              <img class="avatarPicture" src="./images/saitama-leyendo-manga-768x461.jpg" alt="Usuario Leyendo">
+            </div>
             <div class="form">
-              <h1>Registro de mangas</h1>
+              <!-- <h1>Registro de mangas</h1> -->
               <form>
+                <h1>Registro de mangas</h1>
                  <!-- Campo para colocar el id de los datos del manga -->
                 <div class="grupo">
-                  <input type="text"  id="idIndex">
+                  <input type="hidden"  id="idIndex">
                 </div>
                 <!-- Campo para colocar el nombre del manga -->
                 <div class="grupo">
@@ -44,19 +56,27 @@
 
               </form>
             </div>
-            <div class=" ">
-              <table>
-                <th></th>
-                <tbody id="tbodyContent">
-                </tbody>
-              </table>
-
-            </div>
-            <div id="alerts">
-
-            </div>
-
           </div>
+        </div>
+
+        <div class="container table">
+          <h1>Lista de tus mangas favoritos</h1>
+          <table class="table table-hover tabla">
+            <thead id="theadTable">
+            <thead>
+              <!-- <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr> -->
+            </thead>
+            <tbody id="tbodyContent">
+            </tbody>
+          </table>
+
+        </div>
+        <div id="alerts">
         </div>
     </main>
     <script type="text/javascript" src="./js/index.js"></script>
