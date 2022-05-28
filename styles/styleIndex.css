@@ -189,14 +189,6 @@ este cambie de color*/
         margin: 30px;
     }
 
-    /*  */
-    .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-
 }
 
 
@@ -209,14 +201,6 @@ este cambie de color*/
     form .grupo {
         position: relative;
         margin: 30px;
-    }
-
-    /*  */
-    .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
     }
 }
 
@@ -231,13 +215,6 @@ este cambie de color*/
         margin: 30px;
     }
 
-    /*  */
-    .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
 }
 
 
@@ -264,10 +241,4 @@ este cambie de color*/
         margin: 30px;
     }
 
-    .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
 }
